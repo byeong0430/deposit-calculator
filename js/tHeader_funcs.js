@@ -3,7 +3,7 @@ var makeEachHeader = function (rowDOM, subTitle, index) {
   var th = document.createElement('th');
   // The first header row has only 1 column. Set colspan to 2
   if (!index) {
-    th.setAttribute('colspan', 3);
+    th.setAttribute('colspan', 4);
   }
   var header = document.createTextNode(subTitle);
   // Append text node to <th> and then append <th> to the row DOM

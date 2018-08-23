@@ -13,7 +13,7 @@ var makeEachFooter = function (trDOM, footerItem, index) {
   td.setAttribute('class', 'name');
   // The first header row has only 1 column. Set colspan to 2
   if (!index) {
-    td.setAttribute('colspan', 2);
+    td.setAttribute('colspan', 3);
   }
 
   var textNode = document.createTextNode(footerItem);
