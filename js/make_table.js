@@ -4,8 +4,6 @@ $(document).ready(function () {
   var body = $('body')[0];
   // Create table element
   var table = document.createElement('table');
-  // Stylize table
-  table.setAttribute('border', 1);
 
   // Construct thead
   var thead = window.createHeader(window.headers);
