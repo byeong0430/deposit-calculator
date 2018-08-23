@@ -78,7 +78,7 @@ window.deposits = [
 // Each sub-array represents row
 window.headers = [
   ['Deposits'],
-  ['Value', 'Count', 'Subtotal']
+  ['Value', '', 'Count', 'Subtotal']
 ];
 
 window.footer = ['Total', '$0'];
