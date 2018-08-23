@@ -77,7 +77,7 @@ var makeEachRow = function (trDOM, deposit, element) {
   switch (element) {
     case 'name':
       // Add each deposit array's name
-      child = document.createTextNode(deposit[element]);
+      child = document.createTextNode(deposit[element] + ' x ');
       break;
     case 'input':
       // Add input field
