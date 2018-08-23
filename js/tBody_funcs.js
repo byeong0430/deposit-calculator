@@ -35,8 +35,9 @@ var updateSubTotal = function (curDOM) {
   var index = findArrayItem(curDOM, "name");
   // Get current input value (count)
   var count = getInputNumVal(curDOM);
-  var subTotal = window.deposits[index].value * count;
-  $(curDOM).parent().siblings().closest('td[class="subtotal"]').text('$' + subTotal);
+  var subTotal = (window.deposits[index].value * count);
+  var textSubTotal = subTotal === 0 ? '' : '$' + subTotal;
+  $(curDOM).parent().siblings().closest('td[class="subtotal"]').text(textSubTotal);
 };
 
 // Calculate the total of the deposit array
@@ -55,7 +56,8 @@ var updateTotal = function (total) {
 
 var makeSubTotTextNode = function (deposit) {
   var subTotal = deposit.value * deposit.count;
-  return document.createTextNode('$' + subTotal);
+  var textSubTotal = subTotal === 0 ? '' : '$' + subTotal;
+  return document.createTextNode(textSubTotal);
 };
 
 // Create input for integers >= 0
