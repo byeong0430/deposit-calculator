@@ -43,31 +43,31 @@ window.deposits = [
     count: 0
   },
   {
-    name: 'RNx$2',
+    name: 'RN ($2)',
     description: 'RN: Roll of Nickel',
     value: 2,
     count: 0
   },
   {
-    name: 'RDx$5',
+    name: 'RD ($5)',
     description: 'RD: Roll of Dime',
     value: 5,
     count: 0
   },
   {
-    name: 'RQx$10',
+    name: 'RQ ($10)',
     description: 'RQ: Roll of Quarter',
     value: 10,
     count: 0
   },
   {
-    name: 'RLx$25',
+    name: 'RL ($25)',
     description: 'RL: Roll of Loonie',
     value: 25,
     count: 0
   },
   {
-    name: 'RTx$50',
+    name: 'RT ($50)',
     description: 'RT: Roll of Toonie',
     value: 50,
     count: 0
