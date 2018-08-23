@@ -10,10 +10,12 @@ var makeFooter = function (trDOM, footer) {
 // Make each footer row
 var makeEachFooter = function (trDOM, footerItem, index) {
   var td = document.createElement('td');
+  td.setAttribute('class', 'name');
   // The first header row has only 1 column. Set colspan to 2
   if (!index) {
     td.setAttribute('colspan', 2);
   }
+
   var textNode = document.createTextNode(footerItem);
   td.appendChild(textNode);
   trDOM.appendChild(td);
