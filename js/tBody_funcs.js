@@ -77,7 +77,10 @@ var makeEachRow = function (trDOM, deposit, element) {
   switch (element) {
     case 'name':
       // Add each deposit array's name
-      child = document.createTextNode(deposit[element] + ' x ');
+      child = document.createTextNode(deposit[element]);
+      break;
+    case 'x':
+      child = document.createTextNode('x');
       break;
     case 'input':
       // Add input field
@@ -98,7 +101,7 @@ var makeEachRow = function (trDOM, deposit, element) {
 // Create input rows
 var makeTableRow = function (trDOM, deposit) {
   var trDOM;
-  ['name', 'input', 'subtotal'].forEach(function (el) {
+  ['name', 'x', 'input', 'subtotal'].forEach(function (el) {
     trDOM = makeEachRow(trDOM, deposit, el);
   });
   return trDOM;
